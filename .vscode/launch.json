@@ -5,10 +5,16 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Launch Edge",
+            "request": "launch",
+            "type": "msedge",
+            "file": "d:\\VS Code\\Web-Development\\index.html"
+        },
+        {
             "type": "chrome",
             "request": "launch",
             "name": "Open index.html",
-            "file": "d:\\VS Code\\index.html"
+            "file": "d:\\VS Code\\Web-Development\\index.html"
         }
     ]
 }

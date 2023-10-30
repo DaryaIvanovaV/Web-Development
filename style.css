@@ -63,6 +63,8 @@ html {
   color: #454545;
   transition: color 0.3s ease-in-out;
 }
+
+/*Main Page*/
 .main-page{
   /*padding: 60px;*/
   padding-top: 3.12%;
@@ -155,6 +157,8 @@ html {
     }
   }    
 }
+
+/*About Me Page*/
 .about-me-page{
   margin-left: 6.25%;
   margin-right: 6.25%;
@@ -190,6 +194,8 @@ html {
   width: 300px;
   height: 400px;
 }
+
+/*Portfolio Page*/
 .flex-wrapper {
   display: flex;
   align-items: center;
@@ -274,6 +280,8 @@ html {
   width: 200px;
   height: 400px;
 }
+
+/*Contacts Page*/
 .contacts-page{
   margin-left: 6.25%;
   margin-right: 6.25%;
@@ -389,11 +397,102 @@ html {
       .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
         transform: rotate(-35deg);
       }
-    /*body {background-color: red;}*/
+
+      /*Main Page*/
+      .main-page h1{
+        font-size: 35px;
+      }
+      .main-page h2{
+        font-size: 45px;
+      }
+      .main-page-img img{
+        display:none;
+      }
+     .main-page{
+        padding-top: 7.12%;
+        margin-left: 10.25%;
+        margin-right: 10.25%;
+        margin-bottom: 10.25%;
+        font-size: 190%;
+      } /*padding: 60px;*/
+
+      /*About Me*/
+      .about-me-page{
+        margin-left: 10.25%;
+        margin-right: 10.25%;
+        margin-bottom: 10.25%;
+      }
+      .about-me-page p{
+        font-size: 190%;
+      }
+      .about-me-page-img img{
+        margin-left: 10.25%;
+        padding-top: 3.2%;
+        padding-bottom: 20px;
+        width: 250px;
+        height: 350px;
+        float: none;
+      }
+      /*Portfolio*/
+      .portfolio-page{
+        margin-left: 10.25%;
+        margin-right: 10.25%;
+        margin-bottom: 10.25%;
+      }
+      .portfolio-page .skill{
+        font-size: 190%;
+      }
+      .portfolio-page p{
+        font-size: 190%;
+      }
+      .portfolio-page img{
+        margin-left: none;
+        padding-top: 20px;
+        float: none;
+        width: 150px;
+        height: 300px;
+      }
+      .flex-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 90%;
+      }
+      .circular-chart {
+        
+        max-width: 95%;
+        max-height: 220px;
+      }
+
+      /*Contacts*/
+      .contacts-page{
+        margin-left: 10.25%;
+        margin-right: 10.25%;
+        margin-bottom: 10.25%;
+      }
+      .contacts-page p{
+        font-size: 190%;       
+      }
+      .contacts-page img{
+        width: 30%;
+        height: 30%;
+      }
   }
   
   /* Small devices (portrait tablets and large phones, 576px and up) */
   @media only screen and (min-width:576px) {
+    .menu-items li{
+      font-size: 160%;
+    }
+    .main-page h1{
+      font-size: 30px;
+    }
+    .main-page h2{
+      font-size: 40px;
+    }
+    .main-page-img img{
+      width: 200px;
+      height: 200px;
+    }
      /*.navbar .menu-items li{
         font-size: 1.6rem;
     }
@@ -418,7 +517,19 @@ html {
   
   /* Medium devices (landscape tablets, 768px and up) */
   @media only screen and (min-width:768px) {
-
+    .menu-items li{
+      font-size: 200%;
+    }
+    .main-page h1{
+      font-size: 40px;
+    }
+    .main-page h2{
+      font-size: 50px;
+    }
+    .main-page-img img{
+      width: 250px;
+      height: 250px;
+    }
     /*.navbar .menu-items li {
         
         font-size: 1.8rem;
@@ -429,6 +540,16 @@ html {
   
   /* Large devices (laptops/desktops, 992px and up) */
   @media only screen and (min-width:992px){
+    .main-page h1{
+      font-size: 55px;
+    }
+    .main-page h2{
+      font-size: 60px;
+    }
+    .main-page-img img{
+      width: 300px;
+      height: 300px;
+    }
     /*body {background-color: orange;}
     header{
         margin-top: 50px;
@@ -474,6 +595,10 @@ html {
   
   /* Extra large devices (large laptops and desktops, 1200px and up) */
   @media only screen and (min-width:1200px) {
+    .main-page-img img{
+      width: 350px;
+      height: 350px;
+    }
     /*body {background-color: pink;}
     header{
         margin-top: 50px;

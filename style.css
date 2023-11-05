@@ -44,10 +44,6 @@ html {
   list-style: none;
   margin: 40px;
   padding-bottom: 20px;
- /*margin-left: -40%;
-  margin-right: 80%;
-  margin-top: 5%;
-  margin-bottom: 10%;*/
   font-size: 200%;
 }
 
@@ -65,30 +61,27 @@ html {
 }
 
 /*Main Page*/
-.main-page{
-  /*padding: 60px;*/
+ /*.main-page{
   padding-top: 3.12%;
   margin-left: 6.25%;
   margin-right: 6.25%;
   margin-bottom: 6.25%;
   font-size: 200%;
-}
+}У всех свое*/
 .main-page h1{
   font-family: 'Carrois Gothic', sans-serif;
   font-weight: 100;
-  font-size: 55px;
-}
+  
+} /*font-size: 55px;Меняется font-size*/
 .main-page h2{
   padding-top: 20px;
   font-family: 'Fira Sans Extra Condensed';
-  font-size: 60px;
-}
+  
+}/*font-size: 60px;Меняется font-size*/
 .main-page p{
   padding-top: 20px;
 }
 .main-page-img img{
-  /*
-  margin-left: 100px;*/
   margin-right: 6.25%;
   margin-left: 6.25%;
   padding-top: 5.64%;
@@ -159,11 +152,11 @@ html {
 }
 
 /*About Me Page*/
-.about-me-page{
+/*.about-me-page{
   margin-left: 6.25%;
   margin-right: 6.25%;
   margin-bottom: 6.25%;
-}
+} У всех свое*/
 .menu h3{
   align-items: center;
   text-align: center;
@@ -178,22 +171,21 @@ html {
   height: 1px; 
   border:0; 
   border-top: 2px solid #000000;
-  padding-bottom: 3.12%;
+  /*padding-bottom: 3.12%;*/
 }
 .about-me-page p{
-  
   margin-left: none;
   margin-right: none;
   padding-bottom: 20px;
-  font-size: 200%;
-}
-.about-me-page-img img{
+  
+} /*font-size: 200%;Меняется font-size*/
+/*.about-me-page-img img{
   margin-left: 6.25%;
   padding-top: 1.2%;
   float: right;
   width: 300px;
   height: 400px;
-}
+}У всех свое*/
 
 /*Portfolio Page*/
 .flex-wrapper {
@@ -259,44 +251,43 @@ html {
   font-size: 0.3em;
   position: relative;
 }
-.portfolio-page{
+ /*.portfolio-page{
   margin-left: 6.25%;
   margin-right: 6.25%;
   margin-bottom: 6.25%;
-}
+}У всех свое*/
 .portfolio-page .skill{
-  font-size: 200%;
+  
   padding-bottom: 20px;
   text-align: center;
-}
+} /*font-size: 200%;Муняется font-size*/
 .portfolio-page p{
-  font-size: 200%;
+  
   padding-top: 20px;
-}
-.portfolio-page img{
+}/*font-size: 200%;Муняется font-size*/
+/*.portfolio-page-img img{
   margin-left: 6.25%;
   padding-top: 1.2%;
   float: right;
   width: 200px;
   height: 400px;
-}
+}/*У всех свое*/
 
 /*Contacts Page*/
-.contacts-page{
+/*.contacts-page{
   margin-left: 6.25%;
   margin-right: 6.25%;
   margin-bottom: 6.25%;
-}
+}У всех свое*/
 .contacts-page p{
-  font-size: 200%;
-  padding-bottom: 20px;
   
-}
+  padding-bottom: 20px; 
+}/*font-size: 200%;Муняется font-size*/
 .contacts-page img{
-  width: 10%;
-  height: 10%;
+  
+  
   padding-right: 20px;
-}
+}/*width: 10%;height: 10%;Муняется width и height*/
 /* Extra small devices (phones, 576px and down) */
 @media only screen and (max-width:576px) {
     .navbar {
@@ -399,6 +390,13 @@ html {
       }
 
       /*Main Page*/
+      .main-page{
+        padding-top: 7.12%;
+        margin-left: 10.25%;
+        margin-right: 10.25%;
+        margin-bottom: 10.25%;
+        font-size: 190%;
+      }
       .main-page h1{
         font-size: 35px;
       }
@@ -408,33 +406,40 @@ html {
       .main-page-img img{
         display:none;
       }
-     .main-page{
-        padding-top: 7.12%;
-        margin-left: 10.25%;
-        margin-right: 10.25%;
-        margin-bottom: 10.25%;
-        font-size: 190%;
-      } /*padding: 60px;*/
 
       /*About Me*/
       .about-me-page{
         margin-left: 10.25%;
         margin-right: 10.25%;
         margin-bottom: 10.25%;
+        padding-top: 7.12%;
       }
       .about-me-page p{
         font-size: 190%;
       }
       .about-me-page-img img{
-        margin-left: 10.25%;
-        padding-top: 3.2%;
+        margin-left: none;
         padding-bottom: 20px;
         width: 250px;
         height: 350px;
-        float: none;
+        float:none;
       }
+      .about-me-page-img figure{
+        text-align: center;
+      }
+
       /*Portfolio*/
+      .flex-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 90%;
+      }
+      .circular-chart {
+        max-width: 95%;
+        max-height: 220px;
+      }
       .portfolio-page{
+        padding-top: 7.12%;
         margin-left: 10.25%;
         margin-right: 10.25%;
         margin-bottom: 10.25%;
@@ -445,26 +450,19 @@ html {
       .portfolio-page p{
         font-size: 190%;
       }
-      .portfolio-page img{
+      .portfolio-page-img img{
         margin-left: none;
-        padding-top: 20px;
         float: none;
-        width: 150px;
-        height: 300px;
+        width: 170px;
+        height: 320px;
       }
-      .flex-wrapper {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        width: 90%;
-      }
-      .circular-chart {
-        
-        max-width: 95%;
-        max-height: 220px;
+      .portfolio-page-img figure{
+        text-align: center;
       }
 
       /*Contacts*/
       .contacts-page{
+        padding-top: 7.12%;
         margin-left: 10.25%;
         margin-right: 10.25%;
         margin-bottom: 10.25%;
@@ -483,41 +481,103 @@ html {
     .menu-items li{
       font-size: 160%;
     }
+
+    /*Main Page*/
+    .main-page{
+      padding-top: 7.12%;
+      margin-left: 10.25%;
+      margin-right: 10.25%;
+      margin-bottom: 10.25%;
+      font-size: 200%;
+    }
     .main-page h1{
-      font-size: 30px;
+      font-size: 35px;
     }
     .main-page h2{
-      font-size: 40px;
+      font-size: 45px;
     }
     .main-page-img img{
-      width: 200px;
-      height: 200px;
-    }
-     /*.navbar .menu-items li{
-        font-size: 1.6rem;
+      /*display: none;*/
+      width: 35%;
+      height: 38%;
+      margin-right: 10.25%;
+      margin-left: 10.25%;
+      padding-top: 7.12%;
     }
     
-    .burger-menu { display: flex; }
-   nav #icon{
-        display: block;
-        
+    /*About Me*/
+    .about-me-page{
+      margin-left: 10.25%;
+      margin-right: 10.25%;
+      margin-bottom: 10.25%;
+      padding-top: 7.12%;
     }
-    nav ul{
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        top: 80px;
-        left: 0;
-        text-align: center;
+    .about-me-page p{
+      font-size: 200%;
     }
-    nav li{
-        display: block;
-    }*/
+    .about-me-page-img img{
+      margin-left: 10.25%;
+      float: right;
+      width: 38.5%;
+      height: 55.8%;
+    }
+
+    /*Portfolio*/
+    .flex-wrapper {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      width: 60%;
+    }
+    .circular-chart {
+      max-width: 80%;
+      max-height: 220px;
+    }
+    .portfolio-page{
+      padding-top: 7.12%;
+      margin-left: 10.25%;
+      margin-right: 10.25%;
+      margin-bottom: 10.25%;
+    }
+    .portfolio-page .skill{
+      font-size: 200%;
+    }
+    .portfolio-page p{
+      font-size: 200%;
+    }
+    .portfolio-page-img img{
+      margin-left: 10.25%;
+      float: right;
+      width: 29.7%;
+      height: 60%;
+    }
+
+    /*Contacts*/
+    .contacts-page{
+      padding-top: 7.12%;
+      margin-left: 10.25%;
+      margin-right: 10.25%;
+      margin-bottom: 10.25%;
+    }
+    .contacts-page p{
+      font-size: 200%;       
+    }
+    .contacts-page img{
+      width: 20%;
+      height: 20%;
+    }
   }
   
   /* Medium devices (landscape tablets, 768px and up) */
   @media only screen and (min-width:768px) {
     .menu-items li{
+      font-size: 200%;
+    }
+    /*Main Page*/
+    .main-page{
+      padding-top: 7.12%;
+      margin-left: 10.25%;
+      margin-right: 10.25%;
+      margin-bottom: 10.25%;
       font-size: 200%;
     }
     .main-page h1{
@@ -527,19 +587,83 @@ html {
       font-size: 50px;
     }
     .main-page-img img{
-      width: 250px;
-      height: 250px;
+      width: 30%;
+      height: 33%;
+      padding-top: 7.12%;
+      margin-left: 10.25%;
+      margin-right: 10.25%;
     }
-    /*.navbar .menu-items li {
-        
-        font-size: 1.8rem;
-       
-      }
-    body {background-color: blue;}*/
+    
+    /*About Me*/
+    .about-me-page{
+      margin-left: 10.25%;
+      margin-right: 10.25%;
+      margin-bottom: 10.25%;
+    }
+    .about-me-page p{
+      font-size: 200%;
+    }
+    .about-me-page-img img{
+      margin-left: 10.25%;
+      float: right;
+      width: 270px;
+      height: 350px;
+    }
+    /*Portfolio*/
+    .flex-wrapper {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      width: 60%;
+    }
+    .circular-chart {
+      max-width: 80%;
+      max-height: 220px;
+    }
+    .portfolio-page{
+      padding-top: 7.12%;
+      margin-left: 10.25%;
+      margin-right: 10.25%;
+      margin-bottom: 10.25%;
+    }
+    .portfolio-page .skill{
+      font-size: 200%;
+    }
+    .portfolio-page p{
+      font-size: 200%;
+    }
+    .portfolio-page-img img{
+      margin-left: 10.25%;
+      float: right;
+      width: 29.7%;
+      height: 60%;
+    }
+
+    /*Contacts*/
+    .contacts-page{
+      padding-top: 7.12%;
+      margin-left: 10.25%;
+      margin-right: 10.25%;
+      margin-bottom: 10.25%;
+    }
+    .contacts-page p{
+      font-size: 200%;       
+    }
+    .contacts-page img{
+      width: 15%;
+      height: 15%;
+    }
   } 
   
   /* Large devices (laptops/desktops, 992px and up) */
   @media only screen and (min-width:992px){
+    /*Main Page*/
+    .main-page{
+      padding-top: 3.12%;
+      margin-left: 6.25%;
+      margin-right: 6.25%;
+      margin-bottom: 6.25%;
+      font-size: 200%;
+    }
     .main-page h1{
       font-size: 55px;
     }
@@ -549,97 +673,157 @@ html {
     .main-page-img img{
       width: 300px;
       height: 300px;
+      padding-top: 3.12%;
+      margin-left: 6.25%;
+      margin-right: 6.25%;
     }
-    /*body {background-color: orange;}
-    header{
-        margin-top: 50px;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        align-items: center;
-        display: block;
-        justify-content: center;
+   
+    /*About Me*/
+    .about-me-page{
+      margin-left: 6.25%;
+      margin-right: 6.25%;
+      margin-bottom: 6.25%;
+      padding-top: 3.12%;
     }
-    header{
-        margin-top: 50px;
+    .about-me-page p{
+      font-size: 200%;
     }
-    ul{
-        display: flex;
-        justify-content: center;
+    .about-me-page-img img{
+      margin-left: 6.25%;
+      float: right;
+      width: 270px;
+      height: 370px;
     }
-    ul li a{
-        display: block;
-        background:#d1a6e4;
-        padding: 8px 100px 8px 100px;
-        font-size: 18px;
-        color: black;
+    /*Portfolio*/
+    .flex-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
     }
-    ul li{
-        position: relative;
-        border-right: 1px solid #d9c6e2;
-        box-shadow: 1px 4px 10px -5px;
+    .circular-chart {
+    display: block;
+    margin: 10px auto;
+    max-width: 80%;
+    max-height: 220px;
     }
-    ul li:first-child{
-        border-left: 1px solid #d9c6e2;
+    .portfolio-page{
+      padding-top: 3.12%;
+      margin-left: 6.25%;
+      margin-right: 6.25%;
+      margin-bottom: 6.25%;
     }
-    ul li:first-child{
-        border-right: 1px solid #d9c6e2; 
+    .portfolio-page .skill{
+      font-size: 200%;
     }
-    ul li a{
-        display: block;
-        padding: 8px 100px 8px 100px;
-        font-size: 18px;
-    }*/
+    .portfolio-page p{
+      font-size: 200%;
+    }
+    .portfolio-page-img img{
+      margin-left: 6.25%;
+      float: right;
+      width: 200px;
+      height: 400px;
+    }
+
+    /*Contacts*/
+    .contacts-page{
+      padding-top: 3.12%;
+      margin-left: 6.25%;
+      margin-right: 6.25%;
+      margin-bottom: 6.25%;
+    }
+    .contacts-page p{
+      font-size: 200%;
+    }
+    .contacts-page img{
+      width: 10%;
+      height: 10%;
+    }
   } 
   
   /* Extra large devices (large laptops and desktops, 1200px and up) */
   @media only screen and (min-width:1200px) {
+    /*Main Page*/
+    .main-page{
+      /*padding: 60px;*/
+      padding-top: 3.12%;
+      margin-left: 6.25%;
+      margin-right: 6.25%;
+      margin-bottom: 6.25%;
+      font-size: 200%;
+    }
     .main-page-img img{
       width: 350px;
       height: 350px;
     }
-    /*body {background-color: pink;}
-    header{
-        margin-top: 50px;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        align-items: center;
-        display: block;
-        justify-content: center;
+    .main-page h1{
+      font-size: 55px;
     }
-    header{
-        margin-top: 50px;
+    .main-page h2{
+      font-size: 60px;
     }
-    ul{
-        display: flex;
-        justify-content: center;
-    }
-    ul li a{
-        display: block;
-        background:#d1a6e4;
-        padding: 15px 150px 15px 150px;
-        font-size: 20px;
-        color: black;
-    }
-    ul li{
-        position: relative;
-        border-right: 1px solid #d9c6e2;
-        box-shadow: 1px 4px 10px -5px;
-    }
-    ul li:first-child{
-        border-left: 1px solid #d9c6e2;
-    }
-    ul li:first-child{
-        border-right: 1px solid #d9c6e2; 
-    } 
 
-    ul li a{
-        display: block;
-        padding: 15px 150px 15px 150px;
-        font-size: 20px;
-    }*/
+    /*About Me*/
+    .about-me-page{
+      margin-left: 6.25%;
+      margin-right: 6.25%;
+      margin-bottom: 6.25%;
+    }
+    .about-me-page p{
+      font-size: 200%;
+    }
+    .about-me-page-img img{
+      margin-left: 6.25%;
+      float: right;
+      width: 300px;
+      height: 400px;
+    }
 
+    /*Portfolio*/
+    .flex-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    }
+    .circular-chart {
+    display: block;
+    margin: 10px auto;
+    max-width: 80%;
+    max-height: 220px;
+    }
+    .portfolio-page{
+      padding-top: 3.12%;
+      margin-left: 6.25%;
+      margin-right: 6.25%;
+      margin-bottom: 6.25%;
+    }
+    .portfolio-page .skill{
+      font-size: 200%;
+    }
+    .portfolio-page p{
+      font-size: 200%;
+    }
+    .portfolio-page-img img{
+      margin-left: 6.25%;
+      float: right;
+      width: 200px;
+      height: 400px;
+    }
+
+    /*Contacts*/
+    .contacts-page{
+      padding-top: 3.12%;
+      margin-left: 6.25%;
+      margin-right: 6.25%;
+      margin-bottom: 6.25%;
+    }
+    .contacts-page p{
+      font-size: 200%;
+    }
+    .contacts-page img{
+      width: 10%;
+      height: 10%;
+    }
   }

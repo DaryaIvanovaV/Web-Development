@@ -61,23 +61,16 @@ html {
 }
 
 /*Main Page*/
- /*.main-page{
-  padding-top: 3.12%;
-  margin-left: 6.25%;
-  margin-right: 6.25%;
-  margin-bottom: 6.25%;
-  font-size: 200%;
-}У всех свое*/
 .main-page h1{
   font-family: 'Carrois Gothic', sans-serif;
   font-weight: 100;
   
-} /*font-size: 55px;Меняется font-size*/
+} 
 .main-page h2{
   padding-top: 20px;
   font-family: 'Fira Sans Extra Condensed';
   
-}/*font-size: 60px;Меняется font-size*/
+}
 .main-page p{
   padding-top: 20px;
 }
@@ -152,11 +145,6 @@ html {
 }
 
 /*About Me Page*/
-/*.about-me-page{
-  margin-left: 6.25%;
-  margin-right: 6.25%;
-  margin-bottom: 6.25%;
-} У всех свое*/
 .menu h3{
   align-items: center;
   text-align: center;
@@ -171,21 +159,13 @@ html {
   height: 1px; 
   border:0; 
   border-top: 2px solid #000000;
-  /*padding-bottom: 3.12%;*/
 }
 .about-me-page p{
   margin-left: none;
   margin-right: none;
   padding-bottom: 20px;
   
-} /*font-size: 200%;Меняется font-size*/
-/*.about-me-page-img img{
-  margin-left: 6.25%;
-  padding-top: 1.2%;
-  float: right;
-  width: 300px;
-  height: 400px;
-}У всех свое*/
+} 
 
 /*Portfolio Page*/
 .flex-wrapper {
@@ -227,15 +207,15 @@ html {
 }
 
 .circular-chart.orange .circle {
-  stroke: rgb(81, 45, 202);; /*rgb(133, 96, 255);*/
+  stroke: rgb(81, 45, 202);
 }
 
 .circular-chart.green .circle {
-  stroke: rgb(81, 45, 202);;
+  stroke: rgb(81, 45, 202);
 }
 
 .circular-chart.blue .circle {
-  stroke: rgb(81, 45, 202);/*black;*/
+  stroke: rgb(81, 45, 202);
 }
 
 .percentage {
@@ -251,43 +231,24 @@ html {
   font-size: 0.3em;
   position: relative;
 }
- /*.portfolio-page{
-  margin-left: 6.25%;
-  margin-right: 6.25%;
-  margin-bottom: 6.25%;
-}У всех свое*/
 .portfolio-page .skill{
   
   padding-bottom: 20px;
   text-align: center;
-} /*font-size: 200%;Муняется font-size*/
+} 
 .portfolio-page p{
   
   padding-top: 20px;
-}/*font-size: 200%;Муняется font-size*/
-/*.portfolio-page-img img{
-  margin-left: 6.25%;
-  padding-top: 1.2%;
-  float: right;
-  width: 200px;
-  height: 400px;
-}/*У всех свое*/
+}
 
 /*Contacts Page*/
-/*.contacts-page{
-  margin-left: 6.25%;
-  margin-right: 6.25%;
-  margin-bottom: 6.25%;
-}У всех свое*/
 .contacts-page p{
   
   padding-bottom: 20px; 
-}/*font-size: 200%;Муняется font-size*/
+}
 .contacts-page img{
-  
-  
   padding-right: 20px;
-}/*width: 10%;height: 10%;Муняется width и height*/
+}
 /* Extra small devices (phones, 576px and down) */
 @media only screen and (max-width:576px) {
     .navbar {
@@ -395,7 +356,7 @@ html {
         margin-left: 10.25%;
         margin-right: 10.25%;
         margin-bottom: 10.25%;
-        font-size: 170%;
+        font-size: 50%;
       }
       .main-page h1{
         font-size: 30px;

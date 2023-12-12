@@ -351,12 +351,15 @@ html {
       }
 
       /*Main Page*/
+      .menu h3{
+        font-size: 30px;
+      }
       .main-page{
         padding-top: 7.12%;
         margin-left: 10.25%;
         margin-right: 10.25%;
         margin-bottom: 10.25%;
-        font-size: 50%;
+        font-size: 150%;
       }
       .main-page h1{
         font-size: 30px;
@@ -376,13 +379,13 @@ html {
         padding-top: 7.12%;
       }
       .about-me-page p{
-        font-size: 170%;
+        font-size: 150%;
       }
       .about-me-page-img img{
         margin-left: none;
         padding-bottom: 20px;
-        width: 250px;
-        height: 350px;
+        width: 200px;
+        height: 300px;
         float:none;
       }
       .about-me-page-img figure{
@@ -406,10 +409,10 @@ html {
         margin-bottom: 10.25%;
       }
       .portfolio-page .skill{
-        font-size: 190%;
+        font-size: 150%;
       }
       .portfolio-page p{
-        font-size: 190%;
+        font-size: 150%;
       }
       .portfolio-page-img img{
         margin-left: none;
@@ -429,7 +432,7 @@ html {
         margin-bottom: 10.25%;
       }
       .contacts-page p{
-        font-size: 190%;       
+        font-size: 150%;       
       }
       .contacts-page img{
         width: 30%;

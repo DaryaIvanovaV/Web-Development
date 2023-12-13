@@ -27,6 +27,8 @@ html {
   background: none;
   opacity: 0.85;
   height: 50px;
+  position: relative;
+  z-index: 1;
 }
 
 .navbar-container {
@@ -97,18 +99,20 @@ html {
   font-size: 25px;
   margin-top: 30px;
   font-family: 'Andika';
+
   &.type1{
     
     &.type1::after,
     &.type1::before{
       content: '';
-      display: block;
       position: absolute;
+      display: block;
       width: 20%;
       height: 40%;
       border: 2px solid;
       transition: all 0.6s ease;
       border-radius: 2px;
+      
     }
     &.type1::after{
       bottom: 0;

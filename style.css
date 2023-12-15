@@ -15,17 +15,15 @@ html {
     list-style: none;
     text-decoration: none;
 }
-.navbar input[type="checkbox"],
+/*.navbar input[type="checkbox"],
 .navbar .hamburger-lines {
   display: none;
-}
+}*/
 
 .navbar {
   border-style: none none solid none;
-  position:static;
   width: 100%;
   background: none;
-  opacity: 0.85;
   height: 50px;
   position: relative;
   z-index: 1;
@@ -66,7 +64,6 @@ html {
 }
 
 /*Main Page*/
-
 .main-page h1{
   font-family: 'Carrois Gothic', sans-serif;
   font-weight: 100;
@@ -262,11 +259,7 @@ html {
 }
 /* Extra small devices (phones, 576px and down) */
 @media only screen and (max-width:576px) {
-    .navbar {
-        opacity: 0.95;
-    }
-    
-    .navbar-container input[type="checkbox"],
+    .navbar-container .open/*input[type="checkbox"]*/,
       .navbar-container .hamburger-lines {
         display: block;
       }
@@ -279,7 +272,7 @@ html {
         
       }
     
-      .navbar-container input[type="checkbox"] {
+      .navbar-container .open/*input[type="checkbox"]*/ {
         position: absolute;
         display: block;
         height: 32px;
@@ -287,7 +280,6 @@ html {
         top: 20px;
         left: 20px;
         z-index: 5;
-        opacity: 0;
       }
     
       .navbar-container .hamburger-lines {
@@ -353,19 +345,19 @@ html {
         margin-top: 100%;
       }
     
-      .navbar-container input[type="checkbox"]:checked ~ .menu-items {
+      .open .navbar-container /*input[type="checkbox"]:checked ~*/ .menu-items {
         transform: translateX(0);
       }
     
-      .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+      .open .navbar-container /*input[type="checkbox"]:checked ~*/ .hamburger-lines .line1 {
         transform: rotate(35deg);
       }
     
-      .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+      .open .navbar-container /*input[type="checkbox"]:checked ~*/ .hamburger-lines .line2 {
         transform: scaleY(0);
       }
     
-      .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+      .open .navbar-container /*input[type="checkbox"]:checked ~*/ .hamburger-lines .line3 {
         transform: rotate(-35deg);
       }
 
